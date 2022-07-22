@@ -1,0 +1,149 @@
+{
+    "editor.accessibilitySupport": "off",
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "editor.inlineSuggest.enabled": true,
+    "gitlens.currentLine.enabled": false,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "php": false,
+        "jsonc": false
+    },
+    // PHP
+    "php.suggest.basic": false,
+    // PHP CS Fixer
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    },
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.showOutput": false,
+    "php-cs-fixer.autoFixByBracket": false,
+    "php-cs-fixer.rules": "@PSR2",
+    "php-cs-fixer.config": ".php-cs-fixer.php;.php_cs;.php_cs.dist",
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "files.autoSave": "onFocusChange",
+    "php-cs-fixer.lastDownload": 1658446584908,
+    // Php unit config
+    "phpunit.files": "{test,tests}/**/*Test.php",
+    // Blade Formatter
+    "bladeFormatter.format.sortTailwindcssClasses": true,
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.formatOnSave": true
+    },
+    "projectManager.git.baseFolders": [
+        "/Users/r2luna/code/pinguim.do.laravel"
+    ],
+    "filePathBar.pathStyle": "relative",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Base16 Tomorrow",
+    // Visual
+    "editor.fontFamily": "Dank Mono, Monolisa, Operator Mono Lig, Fantasque Sans Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 30,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.lineHeight": 1.6,
+    "terminal.integrated.fontWeight": "normal",
+    "editor.colorDecorators": false,
+    "editor.bracketPairColorization.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.nativeTabs": true,
+    "workbench.editor.showTabs": false,
+    "editor.minimap.enabled": false,
+    "workbench.statusBar.visible": false,
+    "editor.lineNumbers": "off",
+    "window.titleBarStyle": "native",
+    "customizeUI.titleBar": "frameless",
+    "customizeUI.activityBar": "bottom",
+    "window.zoomLevel": 1,
+    "customizeUI.stylesheet": {
+        ".editor .title": "background: transparent ! important;",
+        ".editor .title .label-container": "visibility: hidden;",
+        // // Hide top-right buttons
+        ".editor .title .actions-container .action-item a": "visibility: hidden;",
+        // // Show top-right "settings goto icon"
+        ".editor .title .actions-container .action-item a[title=\"Open Settings (UI)\"]": "visibility: initial;",
+        ".editor .title .actions-container .action-item a[title=\"Open Settings (JSON)\"]": "visibility: initial;",
+        // // Make it the "right-most" icon.
+        ".editor .title .actions-container": "flex- direction: row-reverse;",
+        // // Only show the scrollbar on hover.
+        ".editor .scrollbar .slider": "visibility: hidden",
+        ".editor .scrollbar:hover .slider": "visibility: initial",
+        ".cursor": "transition: all 80ms",
+        ".editor .editor-group-letterpress": "background-image: url(vscode-file://vscode-app/Users/r2luna/Downloads/pdl.svg) !important",
+        ".title-border-bottom:after": "content: none !important",
+        ".editor-container .scroll-decoration": "box-shadow: none !important"
+        // ".mtk11": "color: #91bbff; text-shadow: 0 0 10px #2f36ff, 0 0 22px #9d91ff, 0 0 2px black;",
+        // ".mtk12": "color: #67d2ff;   text-shadow: 0 0 15px #12baff, 0 0 2px black;"
+    },
+    // VIM
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    // Behavior
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // Make find files better
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+        // "**/vendor/{[^l],?[^ai]}*": true,
+        "**/vendor": true,
+        // Hide everything in /public, except "index.php" "**/public/{[^i],?[^n]}*": true, "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/.idea": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        ".phpunit.result.cache": true
+    },
+    "scm.diffDecorations": "gutter",
+    "editor.hover.enabled": true,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": true,
+    "git.decorations.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": false,
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": false,
+    "problems.decorations.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.hideCursorInOverviewRuler": true,
+}
